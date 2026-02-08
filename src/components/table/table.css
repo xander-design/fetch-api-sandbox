@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+    color: #00c3ff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+thead tr {
+    color: #ffffff;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.table-link {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}

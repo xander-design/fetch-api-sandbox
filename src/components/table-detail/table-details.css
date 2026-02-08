@@ -1,0 +1,19 @@
+table tr td.label {
+    color: #ffffff;
+    cursor: default;
+}
+
+table tr td.data-value {
+    color: #00c3ff;
+    cursor: default;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #00c3ff;
+}

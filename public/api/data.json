@@ -1,0 +1,470 @@
+[
+  {
+    "invoiceId": 1,
+    "invoiceNumber": "INV001",
+    "invoiceTitle": "Supply Windows",
+    "projectName": "Project X",
+    "dateCreated": "2025-12-12",
+    "dueDate": "2026-01-12T00:00:00Z",
+    "currency": "GBP",
+    "supplier": {
+      "id": 1,
+      "name": "Northern Glazing Ltd",
+      "address": "1 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": null,
+      "companyRegNo": 12346
+    },
+    "buyer": {
+      "id": 2,
+      "name": "Example Buyer Co",
+      "address": "100 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": "GBXXXXXXXX",
+      "companyRegNo": "654321"
+    },
+    "invoiceItems": [
+      {
+        "id": "1",
+        "description": "Triple glazed 1000mmx1000mm - NL opener",
+        "qty": 1,
+        "unitPrice": 120,
+        "vatAmount": 24.0,
+        "total": 144.0
+      },
+      {
+        "id": "2",
+        "description": "Single glazed 500mmx500mm porthole",
+        "qty": "2",
+        "unitPrice": 50,
+        "vatAmount": 20.0,
+        "total": 120.0
+      }
+    ],
+    "vatRate": "S",
+    "subTotal": 220.0,
+    "vatTotal": 44.0,
+    "total": 264.0,
+    "invoiceType": "purchase",
+    "status": "pending",
+    "itemsInInvoice": 2,
+    "projectReference": "Installation",
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 2,
+    "invoiceNumber": "INV002",
+    "invoiceTitle": "Energy Efficient Window Upgrade",
+    "projectName": null,
+    "dateCreated": "2025-11-30",
+    "dueDate": null,
+    "currency": null,
+    "supplier": {
+      "id": 3,
+      "name": "GreenBuild Services",
+      "address": "20 Market Street, London, EC1A 1AA",
+      "vatNumber": "GB123456789",
+      "companyRegNo": "00998877"
+    },
+    "buyer": {
+      "id": 4,
+      "name": "Acme Manufacturing",
+      "address": "200 Industrial Way, Leeds, LS1 4AB",
+      "vatNumber": null,
+      "companyRegNo": 445566
+    },
+    "invoiceItems": [
+      {
+        "id": "10",
+        "description": "Energy-saving window installation",
+        "qty": 1,
+        "unitPrice": 800,
+        "vatAmount": 40.0,
+        "total": 840.0
+      }
+    ],
+    "vatRate": "R",
+    "subTotal": 800.0,
+    "vatTotal": 40.0,
+    "total": 840.0,
+    "invoiceType": "management",
+    "status": "paid",
+    "itemsInInvoice": 1,
+    "projectReference": null,
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 3,
+    "invoiceNumber": "INV003",
+    "invoiceTitle": "Exported Window Units",
+    "projectName": "Project Maple",
+    "dateCreated": "2025-12-01",
+    "dueDate": "2025-12-15T00:00:00Z",
+    "currency": "EUR",
+    "supplier": {
+      "id": "5",
+      "name": "Euro Glass GmbH",
+      "address": "12 Berliner Strasse, Berlin, 10115",
+      "vatNumber": "DE123456789",
+      "companyRegNo": "HRB12345"
+    },
+    "buyer": {
+      "id": 6,
+      "name": "Globex Europe",
+      "address": "4 Rue de Rivoli, Paris, 75001",
+      "vatNumber": "FR1122334455",
+      "companyRegNo": "55223311"
+    },
+    "invoiceItems": [
+      {
+        "id": "20",
+        "description": "Exported double-glazed units",
+        "qty": 3,
+        "unitPrice": 150,
+        "vatAmount": 0.0,
+        "total": 450.0
+      }
+    ],
+    "vatRate": "Z",
+    "subTotal": "450.0",
+    "vatTotal": 0.0,
+    "total": 450.0,
+    "invoiceType": "sales",
+    "status": "paid",
+    "itemsInInvoice": 1,
+    "projectReference": null,
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 4,
+    "invoiceNumber": "INV004",
+    "invoiceTitle": "Installation Labour",
+    "projectName": "Project X",
+    "dateCreated": "2025-12-05",
+    "dueDate": "2026-01-32T00:00:00Z",
+    "currency": "GBP",
+    "supplier": {
+      "id": 7,
+      "name": "Onsite Installations Ltd",
+      "address": "7 Builder Close, Sheffield, S1 2BB",
+      "vatNumber": "GB246813579",
+      "companyRegNo": 777888
+    },
+    "buyer": {
+      "id": 2,
+      "name": "Example Buyer Co",
+      "address": "100 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": "GBXXXXXXXX",
+      "companyRegNo": "654321"
+    },
+    "invoiceItems": [
+      {
+        "id": "30",
+        "description": "Labour – 2 days",
+        "qty": 2,
+        "unitPrice": 300,
+        "vatAmount": 0.0,
+        "total": 600.0
+      }
+    ],
+    "vatRate": "E",
+    "subTotal": "600.0",
+    "vatTotal": 0.0,
+    "total": "600.0",
+    "invoiceType": "purchase",
+    "status": "disputed",
+    "itemsInInvoice": 1,
+    "projectReference": "Installation",
+    "rejectionDetails": {
+      "reason": "Work not completed as agreed",
+      "raisedBy": "Jane Doe"
+    },
+    "attachments": []
+  },
+  {
+    "invoiceId": 5,
+    "invoiceNumber": "INV004",
+    "invoiceTitle": "Replacement Glass (Credit)",
+    "projectName": "Project X",
+    "dateCreated": "2025-12-21",
+    "dueDate": "2026-01-20T00:00:00Z",
+    "currency": "GBP",
+    "supplier": {
+      "id": 1,
+      "name": "Northern Glazing Ltd",
+      "address": "1 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": null,
+      "companyRegNo": 12346
+    },
+    "buyer": {
+      "id": 2,
+      "name": "Example Buyer Co",
+      "address": "100 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": "GBXXXXXXXX",
+      "companyRegNo": "654321"
+    },
+    "invoiceItems": [
+      {
+        "id": "40",
+        "description": "Credit for damaged pane",
+        "qty": 1,
+        "unitPrice": -60,
+        "vatAmount": -12.0,
+        "total": -72.0
+      },
+      {
+        "id": "41",
+        "description": "Replacement pane",
+        "qty": 1,
+        "unitPrice": 60,
+        "vatAmount": 12.0,
+        "total": 72.0
+      }
+    ],
+    "vatRate": "S",
+    "subTotal": 0.0,
+    "vatTotal": 0.0,
+    "total": "0.0",
+    "invoiceType": "purchase",
+    "status": "pending",
+    "itemsInInvoice": 1,
+    "projectReference": "Installation",
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 6,
+    "invoiceNumber": "INV006",
+    "invoiceTitle": "Supply Doors",
+    "projectName": "Project Fern",
+    "dateCreated": "2025-12-18",
+    "dueDate": "2026-01-17T00:00:00Z",
+    "currency": null,
+    "supplier": {
+      "id": 8,
+      "name": "North East Joinery",
+      "address": "11 Timber Lane, Durham, DH1 2AB",
+      "vatNumber": null,
+      "companyRegNo": 998877
+    },
+    "buyer": {
+      "id": 9,
+      "name": "Umbrella Group",
+      "address": "1 High Street, Manchester, M1 1AA",
+      "vatNumber": "GB000000000",
+      "companyRegNo": "00001234"
+    },
+    "invoiceItems": [
+      {
+        "id": "50",
+        "description": "Fire door set - FD30",
+        "qty": 2,
+        "unitPrice": 210,
+        "vatAmount": 84.0,
+        "total": "504.0"
+      }
+    ],
+    "vatRate": "S",
+    "subTotal": 420.0,
+    "vatTotal": 84.0,
+    "total": 504.0,
+    "invoiceType": "sales",
+    "status": "pending",
+    "itemsInInvoice": 1,
+    "projectReference": null,
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 7,
+    "invoiceNumber": "INV007",
+    "invoiceTitle": "Supply Hardware",
+    "projectName": "Project Cedar",
+    "dateCreated": "2025-11-15",
+    "dueDate": "2025-12-15T00:00:00Z",
+    "currency": "GBP",
+    "supplier": {
+      "id": 11,
+      "name": "Fixings & Fittings UK",
+      "address": "3 Depot Road, Birmingham, B1 1AA",
+      "vatNumber": "GB998877665",
+      "companyRegNo": "10101010"
+    },
+    "buyer": {
+      "id": 4,
+      "name": "Acme Manufacturing",
+      "address": "200 Industrial Way, Leeds, LS1 4AB",
+      "vatNumber": null,
+      "companyRegNo": 445566
+    },
+    "invoiceItems": [
+      {
+        "id": "60",
+        "description": "Window handles (pack of 10)",
+        "qty": "3",
+        "unitPrice": "19.99",
+        "vatAmount": "11.99",
+        "total": "71.96"
+      },
+      {
+        "id": "61",
+        "description": "Fixing screws (box)",
+        "qty": 2,
+        "unitPrice": 9.5,
+        "vatAmount": 3.8,
+        "total": 19.0
+      }
+    ],
+    "vatRate": "S",
+    "subTotal": "59.98",
+    "vatTotal": 11.99,
+    "total": "71.97",
+    "invoiceType": "purchase",
+    "status": "paid",
+    "itemsInInvoice": 2,
+    "projectReference": null,
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 8,
+    "invoiceNumber": "INV008",
+    "invoiceTitle": "Monthly Management Fee",
+    "projectName": "Project Maple",
+    "dateCreated": "2025-12-02",
+    "dueDate": "2026-01-02T00:00:00Z",
+    "currency": "GBP",
+    "supplier": {
+      "id": 12,
+      "name": "Bloom Management Services",
+      "address": "20 Market Street, London, EC1A 1AA",
+      "vatNumber": "GB123456789",
+      "companyRegNo": "00998877"
+    },
+    "buyer": {
+      "id": 6,
+      "name": "Globex Europe",
+      "address": "4 Rue de Rivoli, Paris, 75001",
+      "vatNumber": "FR1122334455",
+      "companyRegNo": "55223311"
+    },
+    "invoiceItems": [
+      {
+        "id": "70",
+        "description": "Management services (Dec)",
+        "qty": 1,
+        "unitPrice": 500,
+        "vatAmount": 0.0,
+        "total": 500.0
+      }
+    ],
+    "vatRate": "E",
+    "subTotal": 500.0,
+    "vatTotal": 0.0,
+    "total": "500.0",
+    "invoiceType": "management",
+    "status": "pending",
+    "itemsInInvoice": 1,
+    "projectReference": null,
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 9,
+    "invoiceNumber": "INV009",
+    "invoiceTitle": "Supply Windows (Phase 2)",
+    "projectName": "Project X",
+    "dateCreated": "2025-12-28",
+    "dueDate": "2026-02-30T00:00:00Z",
+    "currency": "GBP",
+    "supplier": {
+      "id": 1,
+      "name": "Northern Glazing Ltd",
+      "address": "1 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": null,
+      "companyRegNo": 12346
+    },
+    "buyer": {
+      "id": 2,
+      "name": "Example Buyer Co",
+      "address": "100 Main Street, Newcastle upon Tyne, NE1 2DS",
+      "vatNumber": "GBXXXXXXXX",
+      "companyRegNo": "654321"
+    },
+    "invoiceItems": [
+      {
+        "id": "80",
+        "description": "Bay window unit",
+        "qty": 1,
+        "unitPrice": 999.99,
+        "vatAmount": 200.0,
+        "total": 1199.99
+      }
+    ],
+    "vatRate": "S",
+    "subTotal": 999.99,
+    "vatTotal": 200.0,
+    "total": 1199.99,
+    "invoiceType": "purchase",
+    "status": "pending",
+    "itemsInInvoice": 1,
+    "projectReference": "Installation",
+    "rejectionDetails": null,
+    "attachments": []
+  },
+  {
+    "invoiceId": 10,
+    "invoiceNumber": "INV008",
+    "invoiceTitle": "Install Windows (Duplicate Number)",
+    "projectName": "Project Maple",
+    "dateCreated": "2025-12-03",
+    "dueDate": null,
+    "currency": "GBP",
+    "supplier": {
+      "id": 7,
+      "name": "Onsite Installations Ltd",
+      "address": "7 Builder Close, Sheffield, S1 2BB",
+      "vatNumber": "GB246813579",
+      "companyRegNo": 777888
+    },
+    "buyer": {
+      "id": 6,
+      "name": "Globex Europe",
+      "address": "4 Rue de Rivoli, Paris, 75001",
+      "vatNumber": "FR1122334455",
+      "companyRegNo": "55223311"
+    },
+    "invoiceItems": [
+      {
+        "id": "90",
+        "description": "Installation labour (1 day)",
+        "qty": 1,
+        "unitPrice": 300,
+        "vatAmount": 15.0,
+        "total": 315.0
+      },
+      {
+        "id": "91",
+
+        "qty": 1,
+        "unitPrice": 40,
+        "vatAmount": 2.0,
+        "total": 42.0
+      }
+    ],
+    "vatRate": "R",
+    "subTotal": 340.0,
+    "vatTotal": 17.0,
+    "total": "357.0",
+    "invoiceType": "purchase",
+    "status": "disputed",
+    "itemsInInvoice": 3,
+    "projectReference": "Installation",
+    "rejectionDetails": {
+      "reason": "Work not completed as agreed",
+      "raisedBy": "Jane Doe"
+    },
+    "attachments": []
+  }
+]
