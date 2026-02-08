@@ -1,2 +1,2 @@
 # fetch-api-sandbox
-Sandbox app showing how to load local data using fetch
+Sandbox app showing how to load data from a local json file using fetch
